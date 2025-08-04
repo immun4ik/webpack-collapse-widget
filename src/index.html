@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse Widget</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <h1>Collapse Widget Example</h1>
+
+    <div class="collapse-container" id="collapse1">
+        <div class="collapse-header">
+            <button class="collapse-button" type="button" aria-expanded="false" aria-controls="collapse-content-1">
+                What is Webpack?
+            </button>
+        </div>
+        <div class="collapse-content" id="collapse-content-1">
+            <p>Webpack is a static module bundler for modern JavaScript applications. It walks through your project, builds a dependency graph, and combines all modules (JavaScript, CSS, images, etc.) into one or more browser-ready bundles.</p>
+        </div>
+    </div>
+
+    <div class="collapse-container" id="collapse2">
+        <div class="collapse-header">
+            <button class="collapse-button" type="button" aria-expanded="false" aria-controls="collapse-content-2">
+                Why do you need Appveyor?
+            </button>
+        </div>
+        <div class="collapse-content" id="collapse-content-2">
+            <p>Appveyor is a continuous integration and delivery (CI/CD) platform that automates the building, testing, and deployment of your projects. In this case, we're using it to automatically build our Webpack project and publish it to GitHub Pages.</p>
+        </div>
+    </div>
+
+    <div class="collapse-container" id="collapse3">
+        <div class="collapse-header">
+            <button class="collapse-button" type="button" aria-expanded="false" aria-controls="collapse-content-3">
+                Is pure JS good?
+            </button>
+        </div>
+        <div class="collapse-content" id="collapse-content-3">
+            <p>Yes, using pure JavaScript without third-party libraries like jQuery allows you to reduce the bundle size, improve performance, and gain a deeper understanding of how the DOM and browser APIs work. It also reduces the project's dependence on external libraries and makes it easier to maintain in the long run.</p>
+            <p>Additionally, modern browsers provide powerful APIs that previously required jQuery polyfills or wrappers, such as for working with the DOM, AJAX requests, and animations.</p>
+        </div>
+    </div>
+
+</body>
+</html>
